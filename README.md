@@ -9,30 +9,52 @@ composer require webchemistry/svatky
 
 Svátek dnes
 ```php
-WebChemistry\NameDay::getToday();
+$names = WebChemistry\NameDay::getToday();
 ```
 
 Svátek zítra
 ```php
-WebChemistry\NameDay::getTommorrow();
+$names = WebChemistry\NameDay::getTommorrow();
 ```
 
 Svátek včera
 ```php
-WebChemistry\NameDay::getYesterday();
+$names = WebChemistry\NameDay::getYesterday();
 ```
 
 Svátek přes třídu DateTime
 ```php
-WebChemistry\NameDay::getByDateTime(new \DateTime('+ 1 month'));
+$names = WebChemistry\NameDay::getByDateTime(new \DateTime('+ 1 month'));
 ```
 
 Svátek přes timestamp
 ```php
-WebChemistry\NameDay::getByTimestamp(time() + (3 * 24 * 60 * 60));
+$names = WebChemistry\NameDay::getByTimestamp(time() + (3 * 24 * 60 * 60));
 ```
 
 Svátek přes den a měsíc
 ```php
-WebChemistry\NameDay::get(31, 12);
+$names = WebChemistry\NameDay::get(31, 12);
+```
+
+Jaký den a měsíc má svátek?
+```php
+$date = WebChemistry\NameDay::getByName('Řehoř');
+```
+
+## Metody
+
+Třída **WebChemistry\Name**
+```php
+$name->getNames(); // Vrací pole jmen v daném měsíci, většinou jednoprvkový
+(string) $name; // Převede jména/jméno na string, v případě, že se jedná o více jmen, tak jsou oddělené čárkou a mezerou tzn. ", " 
+```
+
+Třída **WebChemistry\Date**
+```php
+$date->getDay(); // Den jako int
+$date->getMonth(); // Měsíc jako int
+$date->toDateTime(); // Objekt DateTime s aktuálním rokem
+$date->toTimestamp(); // Timestamp s aktuálním rokem
+(string) $date; // String nejprve den, potom měsíc oddělené tečkou
 ```

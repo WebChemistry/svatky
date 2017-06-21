@@ -60,3 +60,5 @@ $date->toDateTime(); // Objekt DateTime s aktuálním rokem
 $date->toTimestamp(); // Timestamp s aktuálním rokem
 (string) $date; // String nejprve den, potom měsíc oddělené tečkou
 ```
+
+**TODO:** Petr má svátek 22.2 a 29.6, není zahrnuto 29.6

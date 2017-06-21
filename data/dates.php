@@ -192,7 +192,7 @@ return [
 		26 => ['Adriana'],
 		27 => ['Ladislav'],
 		28 => ['Lubomír'],
-		29 => ['Petr a Pavel'],
+		29 => ['Petr', 'Pavel'],
 		30 => ['Šárka'],
 	],
 	7 => [
@@ -382,7 +382,7 @@ return [
 		21 => ['Natálie'],
 		22 => ['Šimon'],
 		23 => ['Vlasta'],
-		24 => ['Adam a Eva', 'Štědrý den'],
+		24 => ['Adam', 'Eva', 'Štědrý den'],
 		25 => ['Boží hod vánoční', '1. svátek vánoční'],
 		26 => ['Štěpán', '2. svátek vánoční'],
 		27 => ['Žaneta'],

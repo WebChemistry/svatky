@@ -1,0 +1,12 @@
+{
+	"name": "webchemistry/svatky",
+	"desc": "České svátky",
+	"require": {
+		"php": ">= 7.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"WebChemistry\\": "src/"
+		}
+	}
+}

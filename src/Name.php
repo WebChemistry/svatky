@@ -6,18 +6,18 @@ namespace WebChemistry;
 
 final class Name {
 
-	/** @var string */
+	/** @var string[] */
 	private $names;
 
 	/**
-	 * @param array $names
+	 * @param string[] $names
 	 */
 	public function __construct(array $names) {
 		$this->names = $names;
 	}
 
 	/**
-	 * @return array
+	 * @return string[]
 	 */
 	public function getNames(): array {
 		return $this->names;

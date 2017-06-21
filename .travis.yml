@@ -1,0 +1,22 @@
+language: php
+
+os:
+  - linux
+
+php:
+  - 7.1
+  - hhvm
+  - nightly
+
+matrix:
+  include:
+    - php: 7.1
+      env: PHP_STAN=1
+
+install:
+  - composer self-update
+  - composer install
+
+script:
+  - vendor/bin/codecept run
+  - if [ "$PHPSTAN" = "1" ]; then vendor/bin/phpstan analyse src --level=7 --ansi --no-progress -c phpstan.neon; fi
